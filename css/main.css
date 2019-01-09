@@ -93,3 +93,40 @@ main#home {
 #home h1 {
   margin-top: 20vh;
 }
+
+/* *Navigation Bar Menu */
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn-line {
+  width: 28px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: white;
+  transition: all 0.5s;
+}
+
+.menu-btn.close {
+  transform: rotate(180deg);
+}
+
+/* Line 1  Rotate*/
+.menu-btn.close #ln1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+/* Line 2 Hide*/
+.menu-btn.close #ln2 {
+  opacity: 0;
+}
+
+/* Line 3 Roatate*/
+.menu-btn.close #ln3 {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
